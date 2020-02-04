@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "92b3d023-2686-47eb-abf3-b45fada242b5",
+		"name": "Postman Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET REQUEST",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1983fa4a-63ae-43b0-8d0e-e8a9076fd342",
+						"exec": [
+							"pm.test(\"Code Status test is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Status test is OK\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"pm.test(\"State code is OK\", function () { \r",
+							"     pm.response.to.be.ok;\r",
+							"});\r",
+							"pm.test(\"Body is present\", function () {\r",
+							"     pm.response.to.be.withBody;\r",
+							"});\r",
+							"pm.test(\"Content-Type header is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"pm.test(\"State code is OK\", function () { \r",
+							"     pm.response.to.be.json; \r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/employees",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"employees"
+					]
+				},
+				"description": "List the employees"
+			},
+			"response": []
+		},
+		{
+			"name": "GET REQUEST by",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a150dcc7-0136-40d7-b4c4-699dfabf3b6a",
+						"exec": [
+							"pm.test(\"Code Status test is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Status test is OK\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"pm.test(\"State code is OK\", function () { \r",
+							"     pm.response.to.be.ok;\r",
+							"});\r",
+							"pm.test(\"Body is present\", function () {\r",
+							"     pm.response.to.be.withBody;\r",
+							"});\r",
+							"pm.test(\"Content-Type header is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"pm.test(\"State code is OK\", function () { \r",
+							"     pm.response.to.be.json; \r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "id",
+						"value": "1",
+						"description": "1",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/employee/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"employee",
+						"2"
+					]
+				},
+				"description": "List one employee by id=58\nhttp://dummy.restapiexample.com/api/v1/employee/58\n\nTests:\nThe state code is as expected\nThe name of the state code is the corresponding one (OK, Created, ...)\nThe answer has body\nThe answer is in JSON\nThe header has “Content-Type”\nThe response time is less than 200ms"
+			},
+			"response": []
+		},
+		{
+			"name": "POST REQUEST",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "eb77c312-3897-4501-a190-570d6570860a",
+						"exec": [
+							"pm.test(\"Code Status test is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Status test is OK\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"pm.test(\"State code is OK\", function () { \r",
+							"     pm.response.to.be.ok;\r",
+							"});\r",
+							"pm.test(\"Body is present\", function () {\r",
+							"     pm.response.to.be.withBody;\r",
+							"});\r",
+							"pm.test(\"Content-Type header is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"pm.test(\"State code is OK\", function () { \r",
+							"     pm.response.to.be.json; \r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "name",
+						"value": "",
+						"description": "Diego",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"test\",\n    \"salary\": \"123\",\n    \"age\": \"23\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/create",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"create"
+					]
+				},
+				"description": "Create a employee with post request\nhttp://dummy.restapiexample.com/api/v1/create"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2484b35a-ff95-42aa-a2f5-8e7c313d905f",
+						"exec": [
+							"pm.test(\"Code Status test is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Status test is OK\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"pm.test(\"State code is OK\", function () { \r",
+							"     pm.response.to.be.ok;\r",
+							"});\r",
+							"pm.test(\"Body is present\", function () {\r",
+							"     pm.response.to.be.withBody;\r",
+							"});\r",
+							"pm.test(\"Content-Type header is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"pm.test(\"State code is OK\", function () { \r",
+							"     pm.response.to.be.json; \r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\"name\":\"test1\",\"salary\":\"1123\",\"age\":\"23\"}"
+				},
+				"url": {
+					"raw": "{{url}}/update/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"update",
+						"2"
+					]
+				},
+				"description": "Update the employee with id=56\n{{url}}/update/56"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8d1b5caa-d790-495b-acf1-7b42e1ce98ce",
+						"exec": [
+							"pm.test(\"Code Status test is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Status test is OK\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"pm.test(\"State code is OK\", function () { \r",
+							"     pm.response.to.be.ok;\r",
+							"});\r",
+							"pm.test(\"Body is present\", function () {\r",
+							"     pm.response.to.be.withBody;\r",
+							"});\r",
+							"pm.test(\"Content-Type header is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"pm.test(\"State code is OK\", function () { \r",
+							"     pm.response.to.be.json; \r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/delete/63",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"delete",
+						"63"
+					]
+				},
+				"description": "Delete the employee with id=56\n{{url}}/delete/56"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

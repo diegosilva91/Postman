@@ -1,5 +1,6 @@
 # Postman
 _**Postman is a tool that is used, above all, for API REST testing**, although it also supports other features that come out of what is included in the testing of this type of systems_ 
+
 _Thanks to this tool, in addition to testing, consuming and debugging REST APIs,**we can monitor them, write automated tests for them, document them, mock them, simulate them**, etc._
 ## Getting Started 🚀
 _These instructions will get you a copy of the project up and running on your local machine for development and testing purposes._
@@ -26,6 +27,15 @@ or write me.
 - Result Run 
 ![Runs](https://assets.postman.com/postman-docs/using_environment_in_collection_runs/collection_runner_results.png)
 ## Deployment 📦
+### Set up a monitor
+- Select the variable call `Env` in the Environment options
+- Select the Monitor run frequency
+![Monitor](https://www.postman.com/img/pages/api-monitoring/postman-api-monitoring.gif)
+
+_For this project the frequency was set every 5 minutes_
+### Monitor perfomance
+* For follow the behavior of the monitor [read set up documents](https://learning.postman.com/docs/postman/monitors/intro-monitors/)
+![Perfomance](https://assets.postman.com/postman-docs/monitoring-usage-details.jpg)
 
 ## License 📄
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)

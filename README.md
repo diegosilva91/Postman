@@ -14,8 +14,8 @@ Clone or download this reposotitory on
 _Download and install Postman App_
 [Postman](https://www.postman.com/downloads/)
 ## Running the tests ⚙️
-### Open server
-![]()
+### Import collection
+![Import Collecion](https://assets.postman.com/postman-docs/working_with_datafiles/import_sample.png)
 ### Open Console
 Press F12 to see the test
 ![]()

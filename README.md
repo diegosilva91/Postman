@@ -44,7 +44,7 @@ _For this project the frequency was set every 5 minutes_
 ## Built with 🛠️
 - [Prose](http://prose.io/) Github editor for Readmes.
 - [Postman](https://www.postman.com/downloads/) Postman.
-- [Dummy Rest API] (http://dummy.restapiexample.com/) Third API.
+- [Dummy Rest API](http://dummy.restapiexample.com/) Third API.
 ## Authors  ✒️
 * **Diego Silva** - *Initial work* - [Contact](https://www.linkedin.com/in/diego-silva-r/)- Copyright 2020 © 
 ## Acknowledgments 🎁

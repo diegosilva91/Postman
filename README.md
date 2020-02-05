@@ -16,9 +16,12 @@ _Download and install Postman App_
 ## Running the tests ⚙️
 ### Import collection
 ![](https://assets.postman.com/postman-docs/working_with_datafiles/import_sample.png)
-### Open Console
-Press F12 to see the test
+If you have issues while import the collection read the
+[official documentation](https://learning.postman.com/docs/postman/collection-runs/working-with-data-files/)
+or write me.
+### Collection Runs
 ![]()
+## Deployment 📦
 ## License 📄
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 

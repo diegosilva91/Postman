@@ -15,14 +15,18 @@ _Download and install Postman App_
 [Postman](https://www.postman.com/downloads/)
 ## Running the tests ⚙️
 ### Import collection
-- ![](https://assets.postman.com/postman-docs/working_with_datafiles/import_sample.png)
+- Selecting file to import
+![](https://assets.postman.com/postman-docs/working_with_datafiles/import_sample.png)
 - If you have issues while import the collection read the
 [official documentation](https://learning.postman.com/docs/postman/collection-runs/working-with-data-files/)
 or write me.
 ### Collection Runs
-- ![Runs](https://assets.postman.com/postman-docs/Runner-button2.png)
-- ![](https://assets.postman.com/postman-docs/using_environment_in_collection_runs/collection_runner_results.png)
+- Start run
+![Runs](https://assets.postman.com/postman-docs/Runner-button2.png)
+- Result Run 
+![Runs](https://assets.postman.com/postman-docs/using_environment_in_collection_runs/collection_runner_results.png)
 ## Deployment 📦
+
 ## License 📄
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 

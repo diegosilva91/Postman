@@ -15,8 +15,8 @@ _Download and install Postman App_
 [Postman](https://www.postman.com/downloads/)
 ## Running the tests ⚙️
 ### Import collection
-![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
-![](https://assets.postman.com/postman-docs/working_with_datafiles/import_sample.png  |width=10)
+![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width="100")
+![](https://assets.postman.com/postman-docs/working_with_datafiles/import_sample.png  | width=10)
 ### Open Console
 Press F12 to see the test
 ![]()
